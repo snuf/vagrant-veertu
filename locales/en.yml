@@ -1,0 +1,22 @@
+en:
+  vagrant_veertu:
+    errors:
+      veertumanage_unsupported: |-
+        `%{action}` is still not supported by Veertu
+      veertumanage_error: |-
+        There was an error while executing `VeertuManage`, a CLI used by Vagrant
+        for controlling Veertu. The command and stderr is shown below.
+
+        Command: %{command}
+
+        Stderr: %{stderr}
+      veertumanage_notfound_error: |-
+        VeertuManage executable was not found
+      veertumanage_no_name_error: |-
+        could not guess name for vm
+        output: %{output}
+  vagrant:
+    commands:
+      status:
+        stopped: |-
+            The container is currently stopped. Run `vagrant up` to bring it up again.
