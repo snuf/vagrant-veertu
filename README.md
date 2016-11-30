@@ -20,12 +20,16 @@ vagrant plugin install vagrant-veertu
 ## Development environment instructions
 
 if you do not have bundler installed
+
 $ gem install bundler 
+
 $ bundle install
+
 $ rake install
 
-then you can test vagrant
-with 
+
+then you can test vagrant:
+
 $ bundle exec vagrant plugin list
 
 
