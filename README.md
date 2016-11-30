@@ -19,12 +19,11 @@ vagrant plugin install vagrant-veertu
 
 ## Development environment instructions
 
-if you do not have bundler installed
+git clone https://github.com/veertuinc/vagrant-veertu.git
 
-$ gem install bundler 
+cd path/to/vagrant-veertu
 
 $ bundle install
-
 $ rake install
 
 
