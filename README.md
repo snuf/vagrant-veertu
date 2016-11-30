@@ -1,5 +1,5 @@
 
-A Vagrant provider for Veertu
+A Vagrant provider for [Veertu](https://veertu.com/)
 
 
 ## Installing on vagrant
