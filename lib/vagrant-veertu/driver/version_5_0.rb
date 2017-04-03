@@ -278,9 +278,13 @@ module VagrantPlugins
         def enable_adapters(adapters)
           vm_describe = get_vm_describe(@uuid)
           puts vm_describe
-          network_cards = vm_describe['hardware']["network cards"]
-          if network_cards.is_a?(Hash)
-            network_cards = [network_cards]
+          if vm_describe.empty?
+            network_cards = []
+          else
+            network_cards = vm_describe['hardware']["network cards"]
+            if network_cards.is_a?(Hash)
+              network_cards = [network_cards]
+            end
           end
           if network_cards.nil?
             network_cards = []
